@@ -1173,8 +1173,8 @@ Console.WriteLine(s1.Popis()); // Vypíše: Student: Jan Novák, věk: 20
 | **F12** | Přejít na definici |
 | **Ctrl + Space** | Vyvolat IntelliSense (našeptávání) |
 | **{}** | Píšemem pomocí levý alt + b/n |
-| **[]* | Píšemem pomocí levý alt + f/g |
-| **[]* | Píšemem pomocí levý alt + f/g | 
-| **$* | Píšemem pomocí levý alt a pravé tlačítko vedle "L" nebo levý alt + num36 |
+| **[]** | Píšemem pomocí levý alt + f/g |
+| **[]** | Píšemem pomocí levý alt + f/g | 
+| **$** | Píšemem pomocí levý alt a pravé tlačítko vedle "L" nebo levý alt + num36 |
 ---
 

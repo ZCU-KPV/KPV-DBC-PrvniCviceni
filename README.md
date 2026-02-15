@@ -32,7 +32,7 @@
 
 ### Krok za krokem
 
-1. **Spusť Visual Studio 2022** (Community edice je zdarma).
+1. **Spusť Visual Studio 2026** (Community edice je zdarma, stahnete na oficiálních stránkách).
 2. Na úvodní obrazovce klikni na **„Create a new project"** (Vytvořit nový projekt).
 3. V seznamu šablon vyhledej **„Console App"** (Konzolová aplikace).
    - Ujisti se, že vybraná šablona má popisek **C#** a **Windows / Linux / macOS**.
@@ -43,7 +43,7 @@
    - **Location** (Umístění): zvol složku, kam chceš projekt uložit
    - **Solution name** (Název řešení): obvykle stejný jako název projektu
 6. Klikni **Next**.
-7. Vyber **Framework**: `.NET 9.0` (nebo nejnovější dostupná verze).
+7. Vyber **Framework**: `.NET 10.0` (nebo nejnovější dostupná verze).
 8. **Zaškrtni** volbu **„Do not use top-level statements"** – díky tomu uvidíš kompletní strukturu programu včetně `namespace`, `class Program` a metody `Main`.
 9. Klikni **Create** (Vytvořit).
 
@@ -633,7 +633,7 @@ Console.WriteLine(jmena);
 ### Analogie
 
 Představ si třídu jako **formulář** a objekt jako **vyplněný formulář**:
-- Třída `Student` říká: „Každý student má jméno, příjmení a věk."
+- Třída `Student` říká: „Každý student má jméno, příjmení a věk (jsou to jeho vlastnosti)."
 - Objekt (instance) `s1` je konkrétní student: „Jan Novák, 20 let."
 
 ### Kdy vytvořit třídu?
@@ -654,7 +654,7 @@ int vek2 = 22;
 Vytvoříme třídu a instance:
 
 ```csharp
-// Dobře – přehledné a škálovatelné
+// Dobře – přehledné a škálovatelné, můžeme jím pak přidávat rovnou nějaké akce neboli metody (Například Výpis apod.).
 var s1 = new Student("Jan", "Novák", 20);
 var s2 = new Student("Petr", "Svoboda", 22);
 ```
@@ -778,6 +778,9 @@ public Student(string Jmeno, string Prijmeni, int Vek)
 // Parametry konstruktoru jsou jméno, příjmení a věk studenta
 // Student(string Jmeno, string Prijmeni, int Vek) - definice konstruktoru s parametry a jejich datovými typy
 public Student(string Jmeno, string Prijmeni, int Vek)
+                //     ↑
+                //   parametr konstruktoru
+                //   (předaná hodnota)
 {
     // Inicializace vlastností třídy hodnotami z parametrů
     // this - odkaz na aktuální instanci třídy (objekt)
@@ -790,7 +793,7 @@ public Student(string Jmeno, string Prijmeni, int Vek)
 
 ### Klíčové slovo `this`
 
-`this` odkazuje na **aktuální instanci** (objekt) třídy. Používáme ho k rozlišení mezi vlastností třídy a parametrem metody, pokud se jmenují podobně:
+`this` odkazuje na **aktuální instanci** (objekt) třídy. Používáme ho k rozlišení mezi vlastností třídy (this) a parametrem metody(parametr konstruktoru), pokud se jmenují podobně:
 
 ```csharp
 this.jmeno = Jmeno;
@@ -1151,8 +1154,10 @@ Console.WriteLine(s1.Popis()); // Vypíše: Student: Jan Novák, věk: 20
 | **Instance (objekt)** | Konkrétní výskyt třídy vytvořený pomocí `new` |
 | **Konstruktor** | Metoda volaná při vytvoření instance – nastavuje počáteční hodnoty |
 | **Metoda** | Blok kódu ve třídě, který vykonává akci |
+| **Vlastnosti třídy** | Je to daná vlastnostr třídy, kterou často inicialzujeme (přiřazujeme jí hodnotu) v konstruktoru |
 | **foreach** | Cyklus procházející všechny prvky kolekce |
-| **this** | Odkaz na aktuální instanci třídy |
+| **while** | Cyklus s podmínkou, cyklus bude probíhat, do té doby, dokud bude podmínka pravdivá (true) |
+| **this** | Odkaz na vlastnost třídy |
 | **return** | Vrátí hodnotu z metody |
 
 ### Klávesové zkratky ve VS 2022
@@ -1167,7 +1172,9 @@ Console.WriteLine(s1.Popis()); // Vypíše: Student: Jan Novák, věk: 20
 | **Ctrl + .** | Rychlé opravy a návrhy (Quick Actions) |
 | **F12** | Přejít na definici |
 | **Ctrl + Space** | Vyvolat IntelliSense (našeptávání) |
-
+| **{}** | Píšemem pomocí levý alt + b/n |
+| **[]* | Píšemem pomocí levý alt + f/g |
+| **[]* | Píšemem pomocí levý alt + f/g | 
+| **$* | Píšemem pomocí levý alt a pravé tlačítko vedle "L" nebo levý alt + num36 |
 ---
 
-*Autor: učební materiál k předmětu – C# konzolová aplikace, Git/GitHub, VS 2022, .NET 9.*

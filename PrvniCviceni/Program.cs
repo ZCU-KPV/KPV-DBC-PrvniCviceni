@@ -1,4 +1,4 @@
-﻿namespace PrvniCviceni
+namespace PrvniCviceni
 {
     internal class Program
     {
@@ -7,7 +7,7 @@
         // $ - levý alt + num36
 
         // Komentář - text, který není vykonán jako kód, slouží pro vysvětlení kódu
-        /* Komentář - Pomocí těchto znaku můžete zakomentovat větší blok kódu */
+        /* Komentář - Pomocí těchto znaků můžete zakomentovat větší blok kódu */
         // Jednořádkový komentář - začíná dvěma lomítky //
         // Pomocí komentářů můžete deaktivovat části kódu (nebudou vykonány)
 
@@ -22,8 +22,8 @@
              Syntaxe:
                       Datový typ nazev = hodnota;
                       int         nazev_promenne = 5;
-             1. Datový typ - určuje jaký typ dat bude proměnná
-                Datové typy:
+             1. Datový typ - určuje, jaký typ dat bude proměnná obsahovat
+               Datové typy:
                 - int (integer) - celé číslo    
                 - double - desetinné číslo (velmi přesné číslo)
                 - string - text
@@ -52,7 +52,7 @@
             Console.WriteLine("Aplikace pro mocnění");
             //^ - levý alt + num94
 
-            // Runyní výpis s použitím interpolace řetězců
+            // Různý výpis s použitím interpolace řetězců
             // Interpolace řetězců - umožňuje vkládat hodnoty proměnných do textu pomocí {}
             // Začínáme znakem $ před uvozovkami
             // V {} píšeme název proměnné, jejíž hodnotu chceme vložit do textu nebo rovnou příkaz či operaci
@@ -102,10 +102,10 @@
             Console.WriteLine(jmena);
 
             // new Student() - vytvoření nové instance třídy Student
-            // Student - třída, která reprezentuje studenta (je vytvořené dále v kódu)
+            // Student - třída, která reprezentuje studenta (je vytvořena dále v kódu)
             // s1, s2, s3, s4 - názvy proměnných, které budou obsahovat jednotlivé instance třídy Student (tkz. objekty)
             // Konstruktor třídy Student - metoda, která se volá při vytvoření nové instance třídy a inicializuje její vlastnosti
-            // Parametry konstruktoru jsou jméno, příjmení a věk studenta (to je to,co píšeme do závorek)
+            // Parametry konstruktoru jsou jméno, příjmení a věk studenta (to je to, co píšeme do závorek)
 
             var s1 = new Student("Jan", "Novák", 20);
             var s2 = new Student("Petr", "Svoboda", 22);
@@ -135,7 +135,7 @@
             liststud.Add(s4);
 
             // Výpis seznamu studentů do konzole pomocí cyklu foreach
-            // foreach - cyklus, který prochází všechny hodnoty v seznamu (defualtně od začátku (od 0) do konce (do délky pole)
+            // foreach - cyklus, který prochází všechny hodnoty v seznamu (defaultně od začátku (od 0) do konce (do délky pole))
             // student - název proměnné, která bude obsahovat aktuální hodnotu ze seznamu při každé iteraci cyklu
             // Jednoduše řečeno - pro každý objekt (student) v seznamu (liststud) proveď následující blok kódu
             // in liststud - určuje, ze seznamu liststud (který obsahuje objekty třídy Student) se budou brát hodnoty do proměnné student
@@ -187,7 +187,7 @@
                 s5.prijmeni = "Novotný";
                 s5.vek = 18;
 
-            Zde jsme vytvořili nového studenta s5 a následně jsme mu přiřadili hodnoty vlastnostem jmeno, prijmeni a vek (U prázdného konstruktoru jsme jej museli vytvořit ručně).
+            Zde jsme vytvořili nového studenta s5 a následně jsme mu ručně přiřadili hodnoty vlastnostem jmeno, prijmeni a vek (protože prázdný konstruktor vlastnosti neinicializuje).
         */
 
         // Vlastnosti třídy Student

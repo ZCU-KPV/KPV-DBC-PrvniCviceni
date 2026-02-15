@@ -98,13 +98,14 @@ Dobrá zpráva u commitu šetří čas celému týmu – z historie musí být *
 - Řádek 1: **stručný titulek do ~50 znaků** v rozkazovacím způsobu.
 - Nepiš „update" nebo „oprava" – buď konkrétní.
 - Komituj **malé logické celky** (častěji a menší balíčky).
+- Nepoužívej diakritiku.
 
 ```
 Špatně:  Update
-Dobře:   Přidej třídu Student a metodu Popis()
+Dobře:   Pridej tridu Student a metodu Popis()
 
 Špatně:  Oprava věcí
-Dobře:   Oprav diakritiku ve výpise Student.Popis()
+Dobře:   Oprava diakritiku ve výpise Student.Popis()
 ```
 
 ---
@@ -329,7 +330,7 @@ DatovýTyp názevProměnné = hodnota;
 |---|---|---|
 | `int` | Celé číslo | `5`, `-10`, `0` |
 | `double` | Desetinné číslo (velmi přesné) | `3.14`, `-0.5` |
-| `float` | Desetinné číslo (méně přesné než double) | `3.14f` |
+| `float` | Desetinné číslo (méně přesné než double, musíme psát f na konci) | `3.14f` |
 | `string` | Text (řetězec znaků) | `"Ahoj"`, `"Honza"` |
 | `bool` | Pravda / nepravda | `true`, `false` |
 | `var` | Kompilátor sám odvodí typ podle přiřazené hodnoty | `var x = 5;` → bude `int` |
